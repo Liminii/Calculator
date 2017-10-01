@@ -26,7 +26,7 @@ public class MainActivity extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        disp = (EditText) findViewById(R.id.Text_Display);
+        disp = findViewById(R.id.Text_Display);
         clear = (Button) findViewById(R.id.Clear_Button);
         setPass();
     }
