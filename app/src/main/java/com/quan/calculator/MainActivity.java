@@ -27,7 +27,7 @@ public class MainActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         disp = findViewById(R.id.Text_Display);
-        clear = (Button) findViewById(R.id.Clear_Button);
+        clear = findViewById(R.id.Clear_Button);
         setPass();
     }
 
@@ -385,9 +385,9 @@ public class MainActivity extends Activity
             dialog.show();
 
             //setting button and EditText from dialog
-            final EditText setpass = (EditText) dialog.findViewById(R.id.setpass);
-            final EditText confirm = (EditText) dialog.findViewById(R.id.confirm);
-            Button okButton = (Button) dialog.findViewById(R.id.okButton);
+            final EditText setpass = dialog.findViewById(R.id.setpass);
+            final EditText confirm = dialog.findViewById(R.id.confirm);
+            Button okButton = dialog.findViewById(R.id.okButton);
 
             okButton.setOnClickListener(new View.OnClickListener()
             {
@@ -430,7 +430,7 @@ public class MainActivity extends Activity
                         td.show();
 
                         //set ok button2
-                        Button okButton2 = (Button) td.findViewById(R.id.okButton2);
+                        Button okButton2 = td.findViewById(R.id.okButton2);
 
                         okButton2.setOnClickListener(new View.OnClickListener()
                         {
